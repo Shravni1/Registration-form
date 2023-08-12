@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register with me</title>
+    <!-- Include Font Awesome kit for icons -->
+    <script src="https://kit.fontawesome.com/616d812fe9.js" crossorigin="anonymous"> </script>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="form.css">
+    <!-- Link to external JavaScript file for form validation -->
+    <script src="form.js"></script>
+</head>
+
+<body>
+
+    <!-- Container for the entire form -->
+    <div class="container">
+        <form>
+
+            <!-- Heading for the form -->
+            <h2>Register</h2>
+
+            <!-- Box for entering the username -->
+            <div class="box">
+                <i class="fa-solid fa-user"></i>
+                <input type="username" name="username" id="username" placeholder="Enter Your Username">
+            </div>
+            <!-- Box for entering the email -->
+            <div class="box">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="email" name="email" id="email" placeholder="Enter Your email">
+            </div>
+            <!-- Box for entering the password -->
+            <div class="box">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="password" id="password" placeholder="Enter Your password">
+            </div>
+            <!-- Box for confirming the password -->
+            <div class="box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Enter confirm password">
+            </div>
+            <!-- Checkbox for agreeing to terms and conditions -->
+            <div class="condition">
+
+                <input type="checkbox" name="mycheckbox" id="condition" checked>
+                <label for="condition"> I accept all terms and conditions
+                </label>
+            </div>
+            <!-- Button to create an account with validation -->
+            <button class="btn" onclick="validate()">
+                Create an account
+            </button>
+            <div class="foot">
+                <label for="condition"> Already have an account? </label>
+                <a id=first href="login.html" target="_blank">Login</a>
+            </div>
+            <br>
+        </form>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
